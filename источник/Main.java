@@ -1,12 +1,12 @@
 public class Main {
     public static void main(String[] args) throws Exception {
-        int balance  = 200; // баланс счета
-        int payment = 900; // сумма пополнения
+        int balance = 200; // баланс счета
+        int payment = 1100; // сумма пополнения
 
         int bonus; // бонус за каждые 100 руб. пополнения свыше 1000 р.
         if (payment > 1000) {
             bonus = payment / 100;
-        }  else {
+        } else {
             bonus = 0;
         }
 
@@ -14,3 +14,4 @@ public class Main {
         System.out.println("Общий счет: " + finalBalance);
         System.out.println("<Бонус: " + bonus);
     }
+}
